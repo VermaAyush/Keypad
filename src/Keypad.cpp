@@ -94,8 +94,8 @@ void Keypad::scanKeys() {
 			bitWrite(bitMap[r], c, !pin_read(rowPins[r]));  // keypress is active low so invert to high.
 		}
 		// Set pin to high impedance input. Effectively ends column pulse.
-		pin_write(columnPins[c],HIGH);
-		pin_mode(columnPins[c],INPUT);
+		// pin_write(columnPins[c],HIGH);
+		// pin_mode(columnPins[c],INPUT);
 	}
 }
 
